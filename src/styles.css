@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
-  outline: 1px solid black;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -14,8 +15,42 @@ body {
 }
 
 .aside {
-  background-color: blueviolet;
+  background: radial-gradient(circle, rgb(2, 0, 36) 1%, rgb(88, 9, 121) 89%);
+  box-shadow: 8px 0px 5px -5px rgba(34, 60, 80, 0.6);
   grid-area: 1/1/13/3;
+  padding-top: 5%;
+}
+.aside__head {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 60px;
+  padding-left: 5%;
+  margin-bottom: 5vh;
+}
+.aside__head-h1 {
+  font-size: calc(12px + 1.5vw);
+  color: rgb(255, 175, 4);
+}
+.aside__blanks {
+  display: flex;
+  gap: 25px;
+  padding-left: 10%;
+  margin-bottom: 20px;
+  color: rgb(223, 223, 118);
+  font-size: 0.875vw;
+  letter-spacing: 1px;
+}
+.aside__icons {
+  width: 30px;
+  fill: rgb(204, 127, 11);
+}
+.aside__icons-big {
+  min-width: 30px;
+  width: 60px;
+}
+.aside__group-margin {
+  margin-top: 10vh;
 }
 
 .header {
